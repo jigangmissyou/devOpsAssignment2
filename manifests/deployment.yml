@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: webapplication3
-          image: jigangguo/webapplication3:latest  # Replace with the name of your Docker image
+          image: jigangguo/webapplication3:22  # Replace with the name of your Docker image
           imagePullPolicy: Always  # Always pull the latest image
           ports:
             - containerPort: 80
