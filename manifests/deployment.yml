@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: webapplication3-deployment
+  name: myassignment2-deployment
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: webapplication3
+      app: myassignment2
   template:
     metadata:
       labels:
-        app: webapplication3
+        app: myassignment2
     spec:
       containers:
-        - name: webapplication3
-          image: jigangguo/webapplication3:latest  # Replace with the name of your Docker image
+        - name: myassignment2
+          image: jigangguo/myassignment2:latest  # Replace with the name of your Docker image
           imagePullPolicy: Always  # Always pull the latest image
           ports:
             - containerPort: 80
