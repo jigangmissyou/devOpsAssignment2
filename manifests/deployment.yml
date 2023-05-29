@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webapplication3-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: webapplication3
+  template:
+    metadata:
+      labels:
+        app: webapplication3
+    spec:
+      containers:
+        - name: webapplication3
+          image: jigangguo/webapplication3  # Replace with the name of your Docker image
+          ports:
+            - containerPort: 80

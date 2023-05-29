@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: webapplication3-service
+  labels:
+    app: webapplication3-service
+spec:
+  selector:
+    app: webapplication3
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+      nodePort: 31000
+  type: NodePort
