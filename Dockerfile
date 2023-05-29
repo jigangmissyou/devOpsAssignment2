@@ -12,7 +12,7 @@ RUN dotnet restore
 COPY . ./
 
 # Build the application
-RUN dotnet publish -c Release -o out
+RUN dotnet publish -c Release -o /app/out
 
 # Start a new stage with a lightweight base image
 FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS runtime
